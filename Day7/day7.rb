@@ -55,7 +55,7 @@ root = Dir.new("/", nil)
 pwd = root
 cmd = nil
 all_dirs = [root]
-File.read("input.txt").split("\n").map do |line|
+File.read("input.txt").split("\n").each do |line|
   parts = line.split
 
   if parts[0] == "$"
